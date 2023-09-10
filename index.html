@@ -419,7 +419,25 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 											  <span class="bt_bb_separator_v2_inner_after"></span>
 											</div>
 										  </div>
-										  <center><img  class="bt_bb_row_inner bt_bb_animation_fade_in bt_bb_animation_move_up animate" src="images/white.png" alt="" style="align-self: center !important; height: 150px !important;"><br>
+										  <style>
+											/* For screens with a minimum width of 1024px (typical for desktops) */
+@media screen and (min-width: 1024px) {
+  /* Apply the height property with !important for desktop */
+  .your-element {
+    height: 130px !important;
+  }
+}
+
+/* For screens with a maximum width of 1023px (typical for mobiles) */
+@media screen and (max-width: 1023px) {
+  /* Apply the height property with !important for mobile */
+  .your-element {
+    height: 90px !important;
+  }
+}
+
+										  </style>
+										  <center><img  class="bt_bb_row_inner bt_bb_animation_fade_in  animate your-element" src="images/white.png" alt="" style="align-self: center !important;  "><br>
 											<div style="align-self: center; align-items: center;float: center !important;" >
 											
 												  <div id="btndiv1" class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_left bt_bb_style_outline bt_bb_size_normal  " style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
@@ -2967,6 +2985,13 @@ var woocommerce_params = {"ajax_url":"\/demo-01\/wp-admin\/admin-ajax.php","wc_a
 			}
 		
 </script>
+<style>
+	.slick-next.slick-arrow,
+.slick-prev.slick-arrow {
+  display: none !important;
+}
+
+</style>
 <script id="wc-cart-fragments-js-extra">
 var wc_cart_fragments_params = {"ajax_url":"\/demo-01\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/demo-01\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_73385554934edb8d2de4130e2d46352b","fragment_name":"wc_fragments_73385554934edb8d2de4130e2d46352b","request_timeout":"5000"};
 </script>
