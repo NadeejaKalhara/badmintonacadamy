@@ -87,7 +87,7 @@ denyButtonText:"Cancel"
   const ref = database.ref(`books/${year}/${month}/${day}`);
 
   // Read data from Firebase
-  ref.on('value', (snapshot) => {
+  ref.once('value', (snapshot) => {
     const data = snapshot.val();
     // Loop through the data and populate your grid
     Object.keys(data).forEach((court) => {
@@ -112,8 +112,9 @@ $("#target").fadeIn()
     });
   });
 function myclick(){
-  console.log("made sel");
   Toast.close();
+  console.log("made sel");
+  
   const targetDiv = document.getElementById("target");
   // Get all the elements with the class "item" within the "target" div
   const items = targetDiv.querySelectorAll(".hour");
@@ -142,19 +143,7 @@ item.appendChild(paragraphElement);
            text = text+ (`Court ${parseInt(id.replace("c",""))+1} | ${time} - ${oneHourLater} <br>`);
            console.log(text)
         }
-          Toast.fire({
-            html: `
-            <h6>Selected Hours</h6>
-            ${text}
-            `
-          }).then((result) => {
-  /* Read more about isConfirmed, isDenied below */
-  if (result.isConfirmed) {
-    Swal.fire('Saved!', '', 'success')
-  } else if (result.isDenied) {
-  location.reload()
-  }
-});
+
           
       }
       if (classNames.includes("system")) {
@@ -166,6 +155,23 @@ item.appendChild(paragraphElement);
       item.innerHTML = ""
   }
   });
+
+  if(text!=null&&text!=''){
+    Toast.fire({
+      html: `
+      <h6>Selected Hours</h6>
+      ${text}
+      `
+    }).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+  Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+  location.reload()
+  }
+  });
+  }
+
 }
 function formatTime(inputTime) {
   // Use a regular expression to match and capture the hours, minutes, and AM/PM parts
