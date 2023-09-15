@@ -1,0 +1,37 @@
+.terms{
+    padding: 30px;
+    padding-top: 60px;
+    
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    margin: 10px 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+h3{
+    font-size: 1.5rem;
+    margin: 5px 0px;
+    margin-bottom: 5px;
+}
+a{
+    color: rgb(61, 181, 250);
+}
+.slick-track{
+    height: 0px;
+}
+.bt_bb_section.bt_bb_top_spacing_medium > .bt_bb_port{
+    padding-top: 0;
+}
+.bt_bb_separator_v2.bt_bb_bottom_spacing_60 {
+    padding-bottom: 30px;
+}
+
+/* .bt_bb_separator_v2.bt_bb_bottom_spacing_20{
+    padding-bottom: 0;
+} */
