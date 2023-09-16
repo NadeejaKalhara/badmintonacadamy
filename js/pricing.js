@@ -1,11 +1,9 @@
 $(".price-btn1").click(function(){
-    $('.prc1').fadeIn(500);
-    $('.prc1').css({
-        display: 'block',
-    })
-    $('.prc2').css({
-        display: 'none',
-    })
+    document.getElementById("pidz").textContent = "42,000"
+    document.getElementById("midz").textContent = "28,000"
+    document.getElementById("widz").textContent = "9,800"
+    document.getElementById("midday").textContent = "Rs 300"
+    document.getElementById("morning").textContent = "Rs 500"
     $('.price-btn2').css({
         border: 'none',
         backgroundColor: 'transparent',
@@ -17,14 +15,30 @@ $(".price-btn1").click(function(){
         transition: '0.3s ease-in-out',
     })
 })
+function animateNumber(numberElement,targetNumber, duration) {
+    const increment = targetNumber / (duration / 50); // Increment every 50ms
+    let currentNumber = 0;
+
+    function updateNumber() {
+        if (currentNumber < targetNumber) {
+            currentNumber += increment;
+            numberElement.textContent = Math.floor(currentNumber);
+            requestAnimationFrame(updateNumber);
+        } else {
+            numberElement.textContent = targetNumber;
+        }
+    }
+
+    updateNumber();
+}
 $(".price-btn2").click(function(){
-    $('.prc2').fadeIn(500);
-    $('.prc2').css({
-        display: 'block',
-    })
-    $('.prc1').css({
-        display: 'none',
-    })
+document.getElementById("pidz").textContent = "30,000"
+
+document.getElementById("midz").textContent = "20,000"
+document.getElementById("widz").textContent = "7,000"
+document.getElementById("midday").textContent = "Rs 200"
+document.getElementById("morning").textContent = "Rs 300"
+
     $('.price-btn1').css({
         border: 'none',
         backgroundColor: 'transparent',
