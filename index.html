@@ -216,7 +216,23 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 	var dataLayer_content = {"pagePostType":"page","pagePostType2":"single-page","pagePostAuthor":"BoldThemes"};
 	dataLayer.push( dataLayer_content );
 </script>
+<script>
+	function smoothScroll(targetId) {
+	  const targetElement = document.querySelector(targetId);
+  
+	  if (targetElement) {
+		window.scrollTo({
+		  top: targetElement.offsetTop,
+		  behavior: 'smooth' // This enables smooth scrolling
+		});
+		if($(".site-header-responsive-trigger")[0]){
+			$(".site-header-responsive-trigger")[0].click()
 
+		}
+	  }
+	}
+  </script>
+  
 <!-- End Google Tag Manager -->
 <!-- End Google Tag Manager for WordPress by gtm4wp.com --><style>@font-face{font-family:"Auto Signature";font-style:normal;font-weight:400;src:url(fonts/aAutoSignature.ttf)format("truetype");}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
 	<link rel="icon" href="images/logo.png" sizes="32x32">
@@ -257,61 +273,18 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 		<nav class="menu-primary-menu-container" aria-label="navigation"><ul id="primary-menu" class="main-navigation-menu"><li id="menu-item-1580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1580"><a href="index.html">Home</a>
 
 </li>
-<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43"><a href="demo-01/about-us/">About</a>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43"><a  onclick="smoothScroll('#bt_bb_section64fd61127947c')" href="javascript:;">RESERVATIONS</a>
+
+</li>
+<li id="menu-item-1717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1717"><a onclick="smoothScroll('#bt_bb_section64fd61128551a')"  href="javascript:;">PRICING</a>
 <ul class="sub-menu">
-	<li id="menu-item-1692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1692"><a href="demo-01/about-us/">About Us</a></li>
-	<li id="menu-item-1704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1704"><a href="demo-01/about-us/coaches/">Coaches</a></li>
-	<li id="menu-item-1744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1744"><a href="demo-01/about-us/team/">Team</a></li>
-	<li id="menu-item-1743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1743"><a href="demo-01/about-us/sponsors/">Sponsors</a></li>
-	<li id="menu-item-1706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1706"><a href="demo-01/about-us/history/">History</a></li>
-	<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="demo-01/about-us/contact/">Contact</a></li>
-	<li id="menu-item-3883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3883"><a href="demo-01/page-not-found/">404</a></li>
-	<li id="menu-item-3916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3916"><a href="demo-01/under-construction/">Under Construction</a></li>
+	<li id="menu-item-1721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1721"><a  onclick="smoothScroll('#bt_bb_section64fd61128551a')" href="javascript:;">MEMBERS</a></li>
+	<li id="menu-item-1715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715"><a  onclick="smoothScroll('#gege')" href="javascript:;">NON MEMBERS</a></li>
+
 </ul>
 </li>
-<li id="menu-item-1717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1717"><a href="demo-01/results/">Results</a>
-<ul class="sub-menu">
-	<li id="menu-item-1721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1721"><a href="demo-01/results/">Team Results</a></li>
-	<li id="menu-item-1715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715"><a href="demo-01/results/services/">Services</a></li>
-	<li id="menu-item-3902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3902"><a href="demo-01/about-us/booking/">Booking Form</a></li>
-	<li id="menu-item-1722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1722"><a href="demo-01/results/single-game/">Single Game</a></li>
-	<li id="menu-item-1705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1705"><a href="demo-01/results/events-schedule/">Events &#038; Schedule</a></li>
-	<li id="menu-item-1716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716"><a href="demo-01/results/program/">Program</a></li>
-</ul>
-</li>
-<li id="menu-item-1875" class="bt-wide-dropdown bt-wide-dropdown-align-left menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1875"><a href="#">Pages</a>
-<ul class="sub-menu">
-	<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-40"><a href="demo-01/blog/">Blog</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1197"><a href="demo-01/blog/">Standard View (Title on top)</a></li>
-		<li id="menu-item-2793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2793"><a href="/demo-01/blog/?blog_list_view=standard-top-image">Standard View (Image on top)</a></li>
-		<li id="menu-item-1198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1198"><a href="/demo-01/blog/?blog_list_view=columns&#038;sidebar_position=none&#038;blog_list_headline_size=normal">Columns View</a></li>
-		<li id="menu-item-1199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1199"><a href="/demo-01/blog/?blog_list_view=simple">Simple View</a></li>
-		<li id="menu-item-2794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2794"><a href="/demo-01/blog/?blog_list_view=zig-zag&#038;sidebar_position=none&#038;blog_list_headline_size=normal">Zig-zag View</a></li>
-		<li id="menu-item-1205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1205"><a href="demo-01/blog/blog-grid/">Grid View</a></li>
-	</ul>
-</li>
-	<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59"><a href="demo-01/gallery/">Gallery</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2792"><a href="demo-01/gallery/">Standard View (Title on top)</a></li>
-		<li id="menu-item-2790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2790"><a href="/demo-01/gallery/?pf_list_view=standard-top-image">Standard View (Image on top)</a></li>
-		<li id="menu-item-2791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2791"><a href="/demo-01/gallery/?pf_list_view=columns&#038;sidebar_position=none&#038;pf_list_headline_size=normal">Columns View</a></li>
-		<li id="menu-item-2795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2795"><a href="/demo-01/gallery/?pf_list_view=simple">Simple View</a></li>
-		<li id="menu-item-2796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2796"><a href="/demo-01/gallery/?pf_list_view=zig-zag&#038;sidebar_position=none&#038;pf_list_headline_size=normal">Zig-zag View</a></li>
-		<li id="menu-item-2801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2801"><a href="demo-01/elements/gallery-grid-view/">Grid View</a></li>
-	</ul>
-</li>
-	<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41"><a href="demo-01/shop/">Shop</a>
-	<ul class="sub-menu">
-		<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a href="demo-01/shop/">Products</a></li>
-		<li id="menu-item-2849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2849"><a href="demo-01/shop/on-sale/">On Sale</a></li>
-		<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="demo-01/shop/cart/">Cart</a></li>
-		<li id="menu-item-2802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802"><a href="demo-01/shop/checkout/">Checkout</a></li>
-		<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="demo-01/shop/my-account/">My Account</a></li>
-		<li id="menu-item-2839" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2839"><a href="demo-01/shop/order-tracking-form/">Order Tracking Form</a></li>
-	</ul>
-</li>
-</ul>
+<li id="menu-item-1875" class="bt-wide-dropdown bt-wide-dropdown-align-left menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1875"><a onclick="smoothScroll('#bt_bb_section6505a4b13e515')"; href="#bt_bb_section6505a4b13e515">CONTACT US</a>
+
 </li>
 <li id="menu-item-1350" class="bt-wide-dropdown bt-wide-dropdown-align-left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1350"><a href="demo-01/elements/">Elements</a>
 <ul class="sub-menu">
@@ -640,7 +613,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 			</span>
 		  </span>
 		</h1>
-		<span class="bt_bb_headline_superheadline">MEMBERSHIP PACKAGES</span>
+		<span class="bt_bb_headline_superheadline" id="meme">MEMBERSHIP PACKAGES</span>
 
 	  </header>
 </div>
@@ -764,22 +737,37 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 							  </div>
 							</div>
 						  </div>
-						  <div style="padding-left: 2% ;">
+			
+					</div>
+			<br>
+			
+
+
+<br>
+			
+				  <!-- port -->
+				  <div class="bt_bb_section_top_section_coverage_image">
+					<img src="images/top_cover_02_home_03.png" alt="bt_bb_section_top_section_coverage_image">
+				  </div>
+				</section>
+				<section id="gege" style="background-color: white;">
+					<header>
+						<div style="padding-left: 50px ;">
 							<header class="bt_bb_headline bt_bb_superheadline bt_bb_subheadline bt_bb_size_huge bt_bb_align_inherit" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_huge&quot;,&quot;xxl&quot;:&quot;huge&quot;,&quot;xl&quot;:&quot;huge&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
 								<h1 class="bt_bb_headline_tag">
-								  <span class="bt_bb_headline_content" style="font-size: 60px !important;"><br>
+								  <span class="bt_bb_headline_content" style="font-size: 60px !important;padding-right: 30px;"><br>
 									<span>NON-MEMBER <strong>PRICING</strong>
 									</span>
 								  </span>
 								</h1>
-								<span class="bt_bb_headline_superheadline">FOR GUEST CUSTOMERS</span>
+								<span class="bt_bb_headline_superheadline" >FOR GUEST CUSTOMERS</span>
 						
 							  </header>
 						</div>
-					</div>
-			<br>
+						<br><br>
+					</header>
 					<div style="width: 90% !important; padding-top: -20px;align-self: center; padding-left: 10%" class="bt_bb_column col-xxl-12 col-xl-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_border_thickness_1px animated bt_bb_align_left bt_bb_padding_none bt_bb_right_triangle_no bt_bb_left_triangle_no bt_bb_border_top_none bt_bb_border_bottom_none bt_bb_border_right_none bt_bb_border_left_none" data-width="12" data-bt-override-class="{&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_left&quot;,&quot;xxl&quot;:&quot;left&quot;,&quot;xl&quot;:&quot;left&quot;},&quot;bt_bb_padding_&quot;:{&quot;current_class&quot;:&quot;bt_bb_padding_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_right_triangle_&quot;:{&quot;current_class&quot;:&quot;bt_bb_right_triangle_no&quot;,&quot;xxl&quot;:&quot;no&quot;,&quot;xl&quot;:&quot;no&quot;},&quot;bt_bb_left_triangle_&quot;:{&quot;current_class&quot;:&quot;bt_bb_left_triangle_no&quot;,&quot;xxl&quot;:&quot;no&quot;,&quot;xl&quot;:&quot;no&quot;},&quot;bt_bb_border_top_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_top_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_border_bottom_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_bottom_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_border_right_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_right_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_border_left_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_left_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;}}">
-			
+				
 						<div class="bt_bb_column_content">
 						  <div class="bt_bb_column_content_inner">
 							<div class="bt_bb_schedule bt_bb_current_color_scheme_12 bt_bb_style_outline_1px bt_bb_shape_rounded" style="; --current-primary-color:var(--dark-color); --current-secondary-color:var(--transparent-color);">
@@ -905,14 +893,12 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 								</div>
 							  </div>
 						
-</div></div></div></div>
-<br>
+	</div></div></div>
+	
+	</div>
+	<br>		
+</section>
 			
-				  <!-- port -->
-				  <div class="bt_bb_section_top_section_coverage_image">
-					<img src="images/top_cover_02_home_03.png" alt="bt_bb_section_top_section_coverage_image">
-				  </div>
-				</section>
 				<section id="bt_bb_section64fd611286788" class="bt_bb_section bt_bb_color_scheme_5 bt_bb_layout_wide bt_bb_vertical_align_top bt_bb_top_spacing_none bt_bb_bottom_spacing_none bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none" style="; --section-primary-color:var(--alternate-color); --section-secondary-color:var(--light-color);;background-color:rgb(250,250,250);" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_negative_margin_&quot;:{&quot;current_class&quot;:&quot;bt_bb_negative_margin_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;}}">
 				  <div class="bt_bb_port">
 					<div class="bt_bb_cell">
@@ -1018,8 +1004,8 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 				  </div>
 				  <!-- port -->
 				</section>
-				<section id="bt_bb_section64fd611287a97" class="bt_bb_section bt_bb_color_scheme_5 bt_bb_layout_boxed_1400 bt_bb_vertical_align_top bt_bb_top_spacing_large bt_bb_bottom_spacing_large bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none" style="; --section-primary-color:var(--alternate-color); --section-secondary-color:var(--light-color);" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_negative_margin_&quot;:{&quot;current_class&quot;:&quot;bt_bb_negative_margin_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;}}">
-				  <div class="bt_bb_port">
+				<section  id="bt_bb_section64fd611287a97" class="bt_bb_section bt_bb_color_scheme_5 bt_bb_layout_boxed_1400 bt_bb_vertical_align_top bt_bb_top_spacing_large bt_bb_bottom_spacing_large bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none bt_bb_negative_margin_none" style="; --section-primary-color:var(--alternate-color); --section-secondary-color:var(--light-color);" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_negative_margin_&quot;:{&quot;current_class&quot;:&quot;bt_bb_negative_margin_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;}}">
+				  <div class="bt_bb_port" style="display: none;">
 					<div class="bt_bb_cell">
 					  <div class="bt_bb_cell_inner">
 						<div class="bt_bb_row_wrapper">
@@ -1833,7 +1819,8 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 							  </div>
 							  <div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_target_self bt_bb_align_inherit bt_bb_text_size_16px" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_small&quot;,&quot;xxl&quot;:&quot;small&quot;,&quot;xl&quot;:&quot;small&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
 								<span data-ico-remixiconsdevice="&#xe94e;" class="bt_bb_icon_holder">
-								  <span>1-800-1-900</span>
+								  <span>(+94) 701502150
+								</span>
 								</span>
 							  </div>
 							  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_bottom_spacing_10 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_10&quot;,&quot;xxl&quot;:&quot;10&quot;,&quot;xl&quot;:&quot;10&quot;}}">
@@ -1861,7 +1848,10 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 							  </div>
 							  <div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_target_self bt_bb_align_inherit bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_align_content_top bt_bb_text_size_16px" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_small&quot;,&quot;xxl&quot;:&quot;small&quot;,&quot;xl&quot;:&quot;small&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;},&quot;bt_bb_align_content_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_content_top&quot;,&quot;xxl&quot;:&quot;top&quot;,&quot;xl&quot;:&quot;top&quot;}}">
 								<span data-ico-remixiconsmap="&#xe946;" class="bt_bb_icon_holder">
-								  <span>60 East 65th Street, Minneapolis</span>
+								  <span> SuperMind Indoor Sports Complex
+									Meera Road,
+									Matara 
+									</span>
 								</span>
 							  </div>
 							  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_top_spacing_none bt_bb_bottom_spacing_normal bt_bb_border_thickness_1 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_border_thickness_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_thickness_1&quot;,&quot;xxl&quot;:&quot;1&quot;,&quot;xl&quot;:&quot;1&quot;},&quot;bt_bb_icon_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_icon_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_text_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_text_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;}}">
