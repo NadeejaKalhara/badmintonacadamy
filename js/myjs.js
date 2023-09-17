@@ -551,7 +551,7 @@ console.log(monthNumber,thismonth,thisyear,yearno,activedate,dateNumber)
               confirmButtonText:"Download Invoice PDF"
           }).then((result) => {
             if (result.isConfirmed) {
-              window.location.href = `http://localhost:3000/getpdf?oder=${orderId}`
+              window.location.href = `https://supermindlive.onrender.com/getpdf?oder=${orderId}`
               }
            
             } )
