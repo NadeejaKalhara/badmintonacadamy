@@ -374,7 +374,13 @@ return response.json(); // Parse the response as JSON and return the Promise
 .then((responseFromServer) => {
 Swal.fire({
   title: 'Total Amount',
-  text: `Amount to pay: ${responseFromServer.amount}`,
+  html: `Amount to pay: ${responseFromServer.amount}<br>
+  Customer Name: ${result.value.fname +" "+result.value.lname}<br>
+  Age: ${result.value.ageConfirmation}<br>
+  NIC: ${result.value.idNumber}<br>
+  Phone Number: ${result.value.phoneNumber}<br>
+  Booking Hours:<br>${text}
+  `,
   icon: 'info',
   showCancelButton: true,
   confirmButtonText: 'Pay',
