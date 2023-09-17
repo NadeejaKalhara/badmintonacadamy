@@ -358,7 +358,7 @@ date: document.getElementById("datepicker").value,
 var url = "http://localhost:3000/api/getprices";
 var url2 = "https://supermindlive.onrender.com/api/getprices"
 
-fetch(url, {
+fetch(url2, {
 method: 'POST',
 headers: {
   'Content-Type': 'application/json',
@@ -529,7 +529,7 @@ console.log(monthNumber,thismonth,thisyear,yearno,activedate,dateNumber)
         history.replaceState({}, document.title, "/");
         var urlx1 = `https://supermindlive.onrender.com/checkpdf?oder=${orderId}`
         var urlx2 = `http://localhost:3000/checkpdf?oder=${orderId}`
-          const response = await fetch(urlx2, {
+          const response = await fetch(urlx1, {
               method: 'GET',
           });
 
