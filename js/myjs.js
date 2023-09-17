@@ -43,12 +43,15 @@ function resettarget(){
 }
 resettarget()
 
-
+var today = new Date();
+var maxDate = new Date(today);
+maxDate.setDate(today.getDate() + 60);
  const datePicker = MCDatepicker.create({
   el: '#datepicker',
   bodyType: 'modal',
   dateFormat: 'yyyy-MM-dd',
-  minDate: new Date()
+  minDate: new Date(),
+  maxDate: maxDate
 });
 
 
