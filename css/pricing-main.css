@@ -1,95 +1,4 @@
-.pricing-headlines-1{
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 50px;
-}
-.pricing-headlines-2{
-    padding: 0;
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-}
-.pricing1-main{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 100px;
-    flex-flow: wrap;
-}
-.pricing1-child1{
-    width: 40%;
-    background-color: #09203e;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
-    -moz-box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
-    box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
-}
-.pricing1-child2{
-    width: 40%;
-    background-color: #09203e;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
-    -moz-box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
-    box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
-}
-.pricing1-main ul{
-    text-align: left;
-    margin-top: 30px;
-    font-size: 23px;
-}
-.pricing-price{
-    color: gold;
-    margin-left: 50px;
-}
-.pricing-table{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.pricing-table .ul-1{
-    width: 50%;
-}
-.pricing1-main .ul-2{
-    text-decoration: none;
-    list-style: none;
-    color: goldenrod;
-}
-@media screen and (max-width: 1000px){
-    .pricing1-child1, .pricing1-child2{
-        width: 80%;
-    }
-    .pricing1-child1{
-        margin-bottom: 10%;
-    }
-    .pricing1-main{
-        padding-bottom: 0;
-    }
-}
-@media screen and (max-width: 450px){
-    .pricing-table .ul-1{
-        font-size: 4vw;
-        margin: 0;
-    }
-    .pricing-table .ul-2{
-        font-size: 4vw;
-        margin: 0;
-    }
-    .pricing1-main h2{
-        font-size: 8vw;
-        margin-bottom: 10px;
-    }
 
-}
-@media screen and (max-width: 850px){
-    .pricing-headlines-1, .pricing-headlines-2{
-        font-size: 8vw;
-    }
-}
 
 .pricing-toggle-btn{
     margin-bottom: 30px;
@@ -142,15 +51,7 @@
     -moz-box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
     box-shadow: 0px 4px 62px 2px rgba(0,0,0,0.68);
 }
-table {
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
-    font-weight: 500;
-  }
+
   
  .radius1{
     border-top-left-radius: 20px;
@@ -164,85 +65,9 @@ table {
  .radius4{
     border-bottom-right-radius: 20px;
  } 
-  table caption {
-    font-size: 1.5em;
-    margin: .5em 0 .75em;
-  }
-  
-  table tr {
-    background-color: #f8f8f8;
-    border: 2px solid #c0c0c0;
-    padding: .35em;
-  }
-  
-  table th,
-  table td {
-    padding: .625em;
-    text-align: center;
-  }
-  table td{
-    color: #000000;
-  }
 
-  
-  table th {
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  
-  @media screen and (max-width: 600px) {
-    table {
-      border: 0;
-      backdrop-filter: blur(10px);
-      opacity: 0.7;
-    }
-  
-    table caption {
-      font-size: 1.3em;
-    }
-    
-    table thead {
-      border: none;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-    
-    table tr {
-      border-bottom: 1px solid #ddd;
-      display: block;
-      margin-bottom: .625em;
-      border-radius: 20px;
-      
-    }
-    
-    table td {
-      border-bottom: 1px solid #ddd;
-      display: block;
-      font-size: .8em;
-      text-align: right;
-    }
-    
-    table td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    
-    table td:last-child {
-      border-bottom: 0;
-    }
-  }
+
+
 
   .price-btn1-member{
     width: auto;

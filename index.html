@@ -46,10 +46,11 @@
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/js-simple-loader-main/loader.js"></script>
+
+<link rel="stylesheet" href="js/js-simple-loader-main/loader.css">
 <!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="alternate" type="application/rss+xml" title="Demo 01 &raquo; Feed" href="demo-01/feed/">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="alternate" type="application/rss+xml" title="Demo 01 &raquo; Comments Feed" href="demo-01/comments/feed/">
 <script src="js/jquery.weekly-schedule-plugin.min.js"></script>
 <script src="js/MCDatepicker-master/dist/mc-calendar.min.js"></script>
 <link rel="stylesheet" href="js/MCDatepicker-master/dist/mc-calendar.min.css">
@@ -92,9 +93,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel="stylesheet" id="bold-timeline-css" href="css/style.css" media="all">
 <link rel="stylesheet" id="bt_cc_style-css" href="css/style.min_1.css" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" media="all">
-<link rel="stylesheet" id="woocommerce-layout-css" href="css/woocommerce-layout.css" media="all">
-<link rel="stylesheet" id="woocommerce-smallscreen-css" href="css/woocommerce-smallscreen.css" media="only screen and (max-width: 768px)">
-<link rel="stylesheet" id="woocommerce-general-css" href="css/woocommerce.css" media="all">
 <style id="woocommerce-inline-inline-css">
 .woocommerce form .form-row .required { visibility: visible; }
 </style>
@@ -118,8 +116,6 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 </script>
 <link rel="https://api.w.org/" href="demo-01/wp-json/"><link rel="alternate" type="application/json" href="demo-01/wp-json/wp/v2/pages/2079"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="demo-01/xmlrpc.php?rsd">
 
-<link rel="canonical" href="demo-01/home/football/">
-<link rel="shortlink" href="demo-01/?p=2079">
 <link rel="alternate" type="application/json+oembed" href="demo-01/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcampo.bold-themes-cdn.com%2Fdemo-01%2Fhome%2Ffootball%2F">
 <link rel="alternate" type="text/xml+oembed" href="demo-01/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcampo.bold-themes-cdn.com%2Fdemo-01%2Fhome%2Ffootball%2F&#038;format=xml">
 				<script>
@@ -270,7 +266,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 						</div><!-- .site-branding-logo-text -->
 																		<div id="site-navigation" class="main-navigation main-navigation-logo-area" style="--sticky-primary-color:var(--light-color);--sticky-secondary-color:var(--transparent-color);--hover-primary-color:var(--light-color);--hover-secondary-color:var(--accent-color);--dropdown-primary-color:var(--dark-color);--dropdown-secondary-color:var(--light-color);--dropdown-hover-primary-color:var(--dark-color);--dropdown-hover-secondary-color:var(--light-color);">
 							<!--button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button-->
-		<nav class="menu-primary-menu-container" aria-label="navigation"><ul id="primary-menu" class="main-navigation-menu"><li id="menu-item-1580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1580"><a href="index.html">Home</a>
+		<nav class="menu-primary-menu-container" aria-label="navigation"><ul id="primary-menu" class="main-navigation-menu"><li id="menu-item-1580" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1580"><a href="/">Home</a>
 
 </li>
 <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43"><a  onclick="smoothScroll('#bt_bb_section64fd61127947c')" href="javascript:;">RESERVATIONS</a>
@@ -283,49 +279,10 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 
 </ul>
 </li>
-<li id="menu-item-1875" class="bt-wide-dropdown bt-wide-dropdown-align-left menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1875"><a onclick="smoothScroll('#bt_bb_section6505a4b13e515')"; href="#bt_bb_section6505a4b13e515">CONTACT US</a>
+<li id="menu-item-1875" class="bt-wide-dropdown bt-wide-dropdown-align-left menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1875"><a href="#bt_bb_section6505a4b13e515">CONTACT US</a>
 
 </li>
-<li id="menu-item-1350" class="bt-wide-dropdown bt-wide-dropdown-align-left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1350"><a href="demo-01/elements/">Elements</a>
-<ul class="sub-menu">
-	<li id="menu-item-1296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1296"><a href="#">Base</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1298"><a href="demo-01/elements/headlines/">Headlines</a></li>
-		<li id="menu-item-1297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1297"><a href="demo-01/elements/buttons/">Buttons</a></li>
-		<li id="menu-item-1299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1299"><a href="demo-01/elements/icons/">Icons</a></li>
-		<li id="menu-item-1300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1300"><a href="demo-01/elements/images/">Images</a></li>
-		<li id="menu-item-1301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1301"><a href="demo-01/elements/inner-row-column/">Inner Row &#038; Column</a></li>
-		<li id="menu-item-1310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1310"><a href="demo-01/elements/countdown-counter/">Countdown &#038; Counter</a></li>
-		<li id="menu-item-1373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1373"><a href="demo-01/elements/service-element/">Service</a></li>
-		<li id="menu-item-1344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1344"><a href="demo-01/elements/progress-bar/">Progress Bar</a></li>
-	</ul>
-</li>
-	<li id="menu-item-1343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1343"><a href="#">Common</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1351" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="demo-01/elements/price-list/">Price List</a></li>
-		<li id="menu-item-1368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1368"><a href="demo-01/elements/google-maps/">Google Maps</a></li>
-		<li id="menu-item-1378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1378"><a href="demo-01/elements/accordions/">Accordions</a></li>
-		<li id="menu-item-1397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1397"><a href="demo-01/elements/tabs/">Tabs</a></li>
-		<li id="menu-item-1336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1336"><a href="demo-01/elements/slider/">Slider</a></li>
-		<li id="menu-item-2788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2788"><a href="demo-01/elements/card-image-icon/">Card Image &#038; Icon</a></li>
-		<li id="menu-item-3697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3697"><a href="demo-01/elements/single-product-elements/">Single Product</a></li>
-		<li id="menu-item-1357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1357"><a href="demo-01/elements/cost-calculator/">Cost Calculator</a></li>
-	</ul>
-</li>
-	<li id="menu-item-1419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1419"><a href="#">Presentational</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2785"><a href="demo-01/elements/score-elements/">Score &#038; Single Score</a></li>
-		<li id="menu-item-2838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2838"><a href="demo-01/elements/table-elements/">Table</a></li>
-		<li id="menu-item-2789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2789"><a href="demo-01/elements/call-to-action/">Call to action</a></li>
-		<li id="menu-item-2786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2786"><a href="demo-01/elements/quotes-elements/">Quotes</a></li>
-		<li id="menu-item-2787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2787"><a href="demo-01/elements/program-schedule-elements/">Program &#038; Schedule</a></li>
-		<li id="menu-item-3695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="demo-01/elements/single-event-elements/">Single Event</a></li>
-		<li id="menu-item-3696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3696"><a href="demo-01/elements/results-elements/">Results</a></li>
-		<li id="menu-item-1320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1320"><a href="demo-01/elements/blog-layouts/">Blog Layouts</a></li>
-	</ul>
-</li>
-</ul>
-</li>
+
 </ul></nav>														<div class="site-navigation-widgets">
 								<div class="widget_search" id="search-3"><form role="search" method="get" class="search-form" action="demo-01/">
 				<label>
@@ -333,8 +290,8 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 					<input type="search" class="search-field" placeholder="Search &hellip;" value name="s">
 				</label>
 				<button type="submit" class="search-submit">Search</button>
-			</form></div><div class="widget_boldthemes_icon_widget" id="boldthemes_icon_widget-6"><div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_target_self bt_bb_text_empty bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{}"><a href="demo-01/about-us/contact/" target="_self" data-ico-remixiconsmap="&#xe947;" class="bt_bb_icon_holder"></a></div></div><div class="woocommerce widget_shopping_cart" id="woocommerce_widget_cart-3"><h2 class="widgettitle">Cart</h2>
-<div class="widget_shopping_cart_content"></div></div><div class="widget_boldthemes_button_widget" id="boldthemes_button_widget-2"><div class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_left bt_bb_style_filled bt_bb_size_normal bt_bb_shape_round bt_bb_target_self bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{}"><a href="demo-01/shop/" target="_self" class="bt_bb_link" title="CLUB"><span class="bt_bb_button_text">MEMBERS' AREA</span></a></div></div>							</div><!-- .site-navigation-widgets -->
+			</form></div><div href="#bt_bb_section6505a4b13e515" lass="#bt_bb_section6505a4b13e515" id="boldthemes_icon_widget-6"><div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_target_self bt_bb_text_empty bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{}"><a href="#/" target="_self" data-ico-remixiconsmap="&#xe947;" class="bt_bb_icon_holder"></a></div></div><div class="woocommerce widget_shopping_cart" id="woocommerce_widget_cart-3"><h2 class="widgettitle">Cart</h2>
+<div class="widget_shopping_cart_content"></div></div><div class="widget_boldthemes_button_widget" id="boldthemes_button_widget-2"><div class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_left bt_bb_style_filled bt_bb_size_normal bt_bb_shape_round bt_bb_target_self bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{}"><a href="#" target="_self" class="bt_bb_link" title="CLUB"><span class="bt_bb_button_text">MEMBERS' AREA</span></a></div></div>							</div><!-- .site-navigation-widgets -->
 													</div><!-- .main-navigation -->
 											</div><!-- .site-branding-inner -->
 				</div><!-- .site-branding -->
@@ -426,7 +383,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 											<div style="align-self: center; align-items: center;float: center !important;" >
 											
 												  <div id="btndiv1" class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_left bt_bb_style_outline bt_bb_size_normal  " style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-													<a href="https://www.youtube.com/watch?v=nkPIW3oX830" target="_blank" class="bt_bb_link" title="WATCH VIDEO" style="background-color: #09203ead;">
+													<a href="javascript:;" class="bt_bb_link" title="RESERVE" onclick="smoothScroll('#bt_bb_section64fd61127947c')" style="background-color: #09203ead;">
 													  <span class="bt_bb_button_text">RESERVE A COURT</span>
 													  <span  class="bt_bb_icon_holder"><i class="ri-book-mark-fill"></i></span>
 													</a>
@@ -752,7 +709,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 				</section>
 				<section id="gege" style="background-color: white;">
 					<header>
-						<div style="padding-left: 50px ;">
+						<div style="padding-left: 30px ;">
 							<header class="bt_bb_headline bt_bb_superheadline bt_bb_subheadline bt_bb_size_huge bt_bb_align_inherit" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_huge&quot;,&quot;xxl&quot;:&quot;huge&quot;,&quot;xl&quot;:&quot;huge&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
 								<h1 class="bt_bb_headline_tag">
 								  <span class="bt_bb_headline_content" style="font-size: 60px !important;padding-right: 30px;"><br>
@@ -967,12 +924,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 									  <span class="bt_bb_separator_v2_inner_after"></span>
 									</div>
 								  </div>
-								  <div class="bt_bb_button bt_bb_color_scheme_13 bt_bb_icon_position_left bt_bb_style_clean bt_bb_size_normal bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit bt_bb_icon_color_scheme_2" style="; --primary-color:var(--accent-color); --secondary-color:var(--alternate-color);; --icon-primary-color:var(--accent-color); --icon-secondary-color:var(--dark-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-									<a href="demo-01/results/services/" target="_self" class="bt_bb_link" title="READ MORE">
-									  <span class="bt_bb_button_text">READ MORE</span>
-									  <span data-ico-remixiconssystem="&#xe92f;" class="bt_bb_icon_holder"></span>
-									</a>
-								  </div>
+							
 								  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_top_spacing_none bt_bb_bottom_spacing_medium bt_bb_border_thickness_1 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_medium&quot;,&quot;xxl&quot;:&quot;medium&quot;,&quot;xl&quot;:&quot;medium&quot;},&quot;bt_bb_border_thickness_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_thickness_1&quot;,&quot;xxl&quot;:&quot;1&quot;,&quot;xl&quot;:&quot;1&quot;},&quot;bt_bb_icon_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_icon_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_text_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_text_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;}}">
 									<div class="bt_bb_separator_v2_inner">
 									  <span class="bt_bb_separator_v2_inner_before"></span>
@@ -1416,6 +1368,11 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 					</div>
 					<!-- port -->
 				  </section>
+				  <style>
+					.selected2{
+					  background-color: #1e1c42 !important;
+					}
+				  </style>
 				  <section id="bt_bb_section6505a4b13e515" class="bt_bb_section bt_bb_layout_boxed_1400 bt_bb_vertical_align_top bt_bb_top_spacing_large bt_bb_bottom_spacing_large bt_bb_negative_margin_none" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_negative_margin_&quot;:{&quot;current_class&quot;:&quot;bt_bb_negative_margin_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;}}">
 					<div class="bt_bb_port">
 					  <div class="bt_bb_cell">
@@ -1424,7 +1381,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 							<div class="bt_bb_row" data-bt-override-class="{}" data-structure="5-2-5">
 							  <div class="" data-width="5" data-bt-override-class="{&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_left&quot;,&quot;xxl&quot;:&quot;left&quot;,&quot;xl&quot;:&quot;left&quot;},&quot;bt_bb_padding_&quot;:{&quot;current_class&quot;:&quot;bt_bb_padding_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_right_triangle_&quot;:{&quot;current_class&quot;:&quot;bt_bb_right_triangle_no&quot;,&quot;xxl&quot;:&quot;no&quot;,&quot;xl&quot;:&quot;no&quot;},&quot;bt_bb_left_triangle_&quot;:{&quot;current_class&quot;:&quot;bt_bb_left_triangle_no&quot;,&quot;xxl&quot;:&quot;no&quot;,&quot;xl&quot;:&quot;no&quot;},&quot;bt_bb_border_top_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_top_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_border_bottom_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_bottom_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_border_right_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_right_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_border_left_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_left_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;}}">
 								<div class="bt_bb_column_content">
-								  <div class="bt_bb_column_content_inner" style="padding-left: 20px;">
+								  <div class="bt_bb_column_content_inner" style="padding-left: 20px;padding-right: 20px;">
 									<header class="bt_bb_headline bt_bb_subheadline_font_weight_500 bt_bb_dash_none bt_bb_subheadline btNoHeadline bt_bb_subtitle_style_italic bt_bb_size_extralarge bt_bb_align_inherit" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_extralarge&quot;,&quot;xxl&quot;:&quot;extralarge&quot;,&quot;xl&quot;:&quot;extralarge&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
 								<h4 style="font-size: 50px !important;">REACH US</h4>
 									</header>
@@ -1585,7 +1542,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 									</div>
 								  </div>
 								  <div class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_left bt_bb_style_filled bt_bb_size_large bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit bt_bb_icon_color_scheme_3" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);; --icon-primary-color:var(--light-color); --icon-secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-									<a href="demo-01/about-us/contact/" target="_self" class="bt_bb_link" title="JOIN ACADEMY">
+									<a href="#/" target="_self" class="bt_bb_link" title="JOIN ACADEMY">
 									  <span class="bt_bb_button_text">JOIN ACADEMY</span>
 									</a>
 								  </div>
@@ -1599,7 +1556,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 									</div>
 								  </div>
 								  <div class="bt_bb_button bt_bb_color_scheme_3 bt_bb_icon_position_left bt_bb_style_outline bt_bb_size_large bt_bb_width_inline bt_bb_shape_inherit bt_bb_target_self bt_bb_align_inherit bt_bb_icon_color_scheme_1" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);; --icon-primary-color:var(--accent-color); --icon-secondary-color:var(--light-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_large&quot;,&quot;xxl&quot;:&quot;large&quot;,&quot;xl&quot;:&quot;large&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-									<a href="demo-01/about-us/" target="_self" class="bt_bb_link" title="READ TESTIMONIALS">
+									<a href="#" target="_self" class="bt_bb_link" title="READ TESTIMONIALS">
 									  <span class="bt_bb_button_text">READ TESTIMONIALS</span>
 									</a>
 								  </div>
@@ -1710,7 +1667,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 						  <div class="bt_bb_column_content">
 							<div class="bt_bb_column_content_inner">
 							  <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_subheadline bt_bb_size_small bt_bb_align_inherit btNoHeadline" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_small&quot;,&quot;xxl&quot;:&quot;small&quot;,&quot;xl&quot;:&quot;small&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<div class="bt_bb_headline_subheadline">TEAM</div>
+								<div class="bt_bb_headline_subheadline">Quick Links</div>
 							  </header>
 							  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_top_spacing_none bt_bb_bottom_spacing_20 bt_bb_border_thickness_1 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_20&quot;,&quot;xxl&quot;:&quot;20&quot;,&quot;xl&quot;:&quot;20&quot;},&quot;bt_bb_border_thickness_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_thickness_1&quot;,&quot;xxl&quot;:&quot;1&quot;,&quot;xl&quot;:&quot;1&quot;},&quot;bt_bb_icon_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_icon_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_text_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_text_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;}}">
 								<div class="bt_bb_separator_v2_inner">
@@ -1725,20 +1682,18 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 								<div class="menu-team-menu-container">
 								  <ul id="menu-team-menu" class="menu">
 									<li id="menu-item-3856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3856">
-									  <a href="demo-01/results/single-game/">Roster</a>
+									  <a href="#">Members' Area</a>
 									</li>
 									<li id="menu-item-3854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3854">
-									  <a href="demo-01/about-us/history/">Academy</a>
+									  <a href="#bt_bb_section64fd61127947c">Rservations</a>
 									</li>
 									<li id="menu-item-3853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3853">
-									  <a href="demo-01/about-us/coaches/">Coaching Stuff</a>
+									  <a href="#bt_bb_section64fd61128551a">Pricing</a>
 									</li>
 									<li id="menu-item-3857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3857">
-									  <a href="demo-01/results/events-schedule/">Schedule</a>
+									  <a href="#bt_bb_section6505a4b13e515">Contact Us</a>
 									</li>
-									<li id="menu-item-3855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3855">
-									  <a href="demo-01/gallery/">Gallery</a>
-									</li>
+								
 								  </ul>
 								</div>
 							  </div>
@@ -1758,7 +1713,7 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 						  <div class="bt_bb_column_content">
 							<div class="bt_bb_column_content_inner">
 							  <header class="bt_bb_headline bt_bb_color_scheme_7 bt_bb_dash_none bt_bb_subheadline bt_bb_size_small bt_bb_align_inherit btNoHeadline" style="; --primary-color:var(--light-color); --secondary-color:var(--alternate-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_small&quot;,&quot;xxl&quot;:&quot;small&quot;,&quot;xl&quot;:&quot;small&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<div class="bt_bb_headline_subheadline">CLUB</div>
+								<div class="bt_bb_headline_subheadline">DOCUMENTAION</div>
 							  </header>
 							  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_top_spacing_none bt_bb_bottom_spacing_20 bt_bb_border_thickness_1 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_20&quot;,&quot;xxl&quot;:&quot;20&quot;,&quot;xl&quot;:&quot;20&quot;},&quot;bt_bb_border_thickness_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_thickness_1&quot;,&quot;xxl&quot;:&quot;1&quot;,&quot;xl&quot;:&quot;1&quot;},&quot;bt_bb_icon_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_icon_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_text_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_text_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;}}">
 								<div class="bt_bb_separator_v2_inner">
@@ -1773,20 +1728,15 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 								<div class="menu-custom-menu-container">
 								  <ul id="menu-custom-menu" class="menu">
 									<li id="menu-item-1289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1289">
-									  <a href="demo-01/about-us/">About Us</a>
+									  <a href="#">Terms of Use</a>
 									</li>
 									<li id="menu-item-1794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1794">
-									  <a href="demo-01/about-us/history/">History</a>
+									  <a href="#/">Privacy Policy</a>
 									</li>
 									<li id="menu-item-1795" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1795">
-									  <a href="demo-01/results/services/">Services</a>
+									  <a href="#">Refund Policy</a>
 									</li>
-									<li id="menu-item-1290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1290">
-									  <a href="demo-01/blog/">News &#038; Media</a>
-									</li>
-									<li id="menu-item-1796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1796">
-									  <a href="demo-01/shop/">Store</a>
-									</li>
+
 								  </ul>
 								</div>
 							  </div>
@@ -1876,16 +1826,16 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 								</div>
 							  </div>
 							  <div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_target_blank bt_bb_text_empty bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<a href="https://www.facebook.com/SuperMind Solutions" target="_blank" data-ico-remixiconslogos="&#xe931;" class="bt_bb_icon_holder"></a>
+								<a href="#" target="_blank" data-ico-remixiconslogos="&#xe931;" class="bt_bb_icon_holder"></a>
 							  </div>
 							  <div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_target_blank bt_bb_text_empty bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<a href="https://twitter.com/bold_themes?lang=en" target="_blank" data-ico-remixiconslogos="&#xe99d;" class="bt_bb_icon_holder"></a>
+								<a href="#" target="_blank" data-ico-remixiconslogos="&#xe99d;" class="bt_bb_icon_holder"></a>
 							  </div>
 							  <div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_target_blank bt_bb_text_empty bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<a href="https://www.instagram.com/bold_themes/?hl=en" target="_blank" data-ico-remixiconslogos="&#xe947;" class="bt_bb_icon_holder"></a>
+								<a href="#" target="_blank" data-ico-remixiconslogos="&#xe947;" class="bt_bb_icon_holder"></a>
 							  </div>
 							  <div class="bt_bb_icon bt_bb_color_scheme_3 bt_bb_style_borderless bt_bb_size_normal bt_bb_shape_circle bt_bb_target_blank bt_bb_text_empty bt_bb_align_inherit" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<a href="https://www.youtube.com/channel/UCPL5LgX32KsbQ1i9nV-xiKA" target="_blank" data-ico-remixiconslogos="&#xe9b9;" class="bt_bb_icon_holder"></a>
+								<a href="#" target="_blank" data-ico-remixiconslogos="&#xe9b9;" class="bt_bb_icon_holder"></a>
 							  </div>
 							  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_top_spacing_none bt_bb_bottom_spacing_none bt_bb_border_thickness_1 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;,&quot;lg&quot;:&quot;medium&quot;,&quot;md&quot;:&quot;medium&quot;,&quot;sm&quot;:&quot;medium&quot;,&quot;xs&quot;:&quot;medium&quot;},&quot;bt_bb_border_thickness_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_thickness_1&quot;,&quot;xxl&quot;:&quot;1&quot;,&quot;xl&quot;:&quot;1&quot;},&quot;bt_bb_icon_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_icon_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_text_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_text_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;}}">
 								<div class="bt_bb_separator_v2_inner">
@@ -1903,12 +1853,12 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 						  <div class="bt_bb_column_content">
 							<div class="bt_bb_column_content_inner">
 							  <header class="bt_bb_headline bt_bb_color_scheme_3 bt_bb_dash_none bt_bb_subheadline bt_bb_size_small bt_bb_align_inherit btNoHeadline" style="; --primary-color:var(--light-color); --secondary-color:var(--accent-color);" data-bt-override-class="{&quot;bt_bb_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_size_small&quot;,&quot;xxl&quot;:&quot;small&quot;,&quot;xl&quot;:&quot;small&quot;},&quot;bt_bb_align_&quot;:{&quot;current_class&quot;:&quot;bt_bb_align_inherit&quot;,&quot;xxl&quot;:&quot;inherit&quot;,&quot;xl&quot;:&quot;inherit&quot;}}">
-								<div class="bt_bb_headline_subheadline">WE ACCEPT</div>
 							  </header>
 							  <div class="bt_bb_separator_v2 bt_bb_border_style_none bt_bb_top_spacing_none bt_bb_bottom_spacing_20 bt_bb_border_thickness_1 bt_bb_icon_size_normal bt_bb_text_size_normal bt_bb_separator_v2_without_content" data-bt-override-class="{&quot;bt_bb_top_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_top_spacing_none&quot;,&quot;xxl&quot;:&quot;none&quot;,&quot;xl&quot;:&quot;none&quot;},&quot;bt_bb_bottom_spacing_&quot;:{&quot;current_class&quot;:&quot;bt_bb_bottom_spacing_20&quot;,&quot;xxl&quot;:&quot;20&quot;,&quot;xl&quot;:&quot;20&quot;},&quot;bt_bb_border_thickness_&quot;:{&quot;current_class&quot;:&quot;bt_bb_border_thickness_1&quot;,&quot;xxl&quot;:&quot;1&quot;,&quot;xl&quot;:&quot;1&quot;},&quot;bt_bb_icon_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_icon_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;},&quot;bt_bb_text_size_&quot;:{&quot;current_class&quot;:&quot;bt_bb_text_size_normal&quot;,&quot;xxl&quot;:&quot;normal&quot;,&quot;xl&quot;:&quot;normal&quot;}}">
 								<div class="bt_bb_separator_v2_inner">
 								  <span class="bt_bb_separator_v2_inner_before"></span>
 								  <span class="bt_bb_separator_v2_inner_content">
+
 									<span data-ico- class="bt_bb_icon_holder"></span>
 								  </span>
 								  <span class="bt_bb_separator_v2_inner_after"></span>
@@ -2009,11 +1959,9 @@ var boldthemes_text_strings = {"override_alert":"This page\/post is using Overri
 							  <div class="bt_bb_custom_menu bt_bb_direction_horizontal bt_bb_font_size_14px bt_bb_text_decoration_underline bt_bb_color_scheme_23" style="; --custom-menu-primary-color:var(--light-gray-color); --custom-menu-secondary-color:var(--light-color);">
 								<div class="menu-footer-menu-container">
 								  <ul id="menu-footer-menu" class="menu">
-									<li id="menu-item-3209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3209">
-									  <a href="demo-01/about-us/">Privacy Policy</a>
-									</li>
+						
 									<li id="menu-item-3210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3210">
-									  <a href="demo-01/results/services/">Cookie Policy</a>
+										Coded with ♥ by  <a href="https://wa.me/94717723341" target="_blank"> Nadee</a>
 									</li>
 								  </ul>
 								</div>
