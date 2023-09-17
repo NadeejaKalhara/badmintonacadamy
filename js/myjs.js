@@ -28,7 +28,7 @@ function resettarget(){
     fontWeight: "100", 
   
     // Font size used in the component
-    fontSize: "12px", 
+    fontSize: "18px", 
   
     // Background color when hovered
     hoverColor: "#727bad", 
