@@ -77,7 +77,7 @@ var swiper = new Swiper(".price-swiper", {
       0: {
           slidesPerView: 1,
       },
-      520: {
+      600: {
           slidesPerView: 2,
       },
       1000: {
