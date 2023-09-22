@@ -41,6 +41,51 @@ function resettarget(){
     
   });
 }
+
+// JS Part for Home Slider
+var swiper = new Swiper(".home-swiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+});
+
+// JS Part for Pricing Slider
+
+var swiper = new Swiper(".price-swiper", {
+  spaceBetween: 25,
+  
+  fade: 'true',
+  // freeMode: true,
+
+  navigation: {
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
+  },
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      1000: {
+          slidesPerView: 3,
+      }
+  }
+});
+
 resettarget()
 
 var today = new Date();
